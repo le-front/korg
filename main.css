@@ -1,0 +1,217 @@
+/*########  global  ##########*/
+
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+    color: tomato;
+    font-size: 5vw;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+
+.glow {
+    text-shadow: 0 0 30px #e60000, 0 0 40px #e60000, 0 0 50px #e60000, 0 0 60px #e60000, 0 0 70px #e60000;
+}
+
+h2 {
+    margin-top: 0;
+    line-height: 2rem;
+    font-size: 1.6rem;
+}
+
+p {
+    margin: 10px 0 10px 0;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    font-weight: 100;
+}
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: #313131;
+  font-size: 1.2rem;
+}
+
+body, html {
+  height: 100%;
+}
+
+/*########  header  ##########*/
+
+header {
+  background: black;
+  box-shadow: 0px 5px 10px #252525;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /*overflow: hidden;*/
+  height: 50px;
+
+}
+
+.nav-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  color:white;
+  margin: 0 30px 0 0;
+}
+
+nav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  padding: 5px 10px;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: tomato;
+}
+
+#header-img img {
+    height: 50px;
+  }
+
+#header-img {
+  margin-right: auto;  
+}
+
+/*########  features  ##########*/
+
+.container * {
+box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;    
+}
+
+section {
+    background-color: #212121; 
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 1rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.info {
+    padding: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: whitesmoke;
+    /*max-width: 389px;*/
+    flex: 1 0 50vw;
+}
+
+.image {
+    max-width: 500px;
+    flex: 1 0 26.3vw;
+}
+
+.image img {
+    /*object-fit: fill;*/
+    width: 100%;
+    height: auto;
+}
+
+.how-it-works {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center
+}
+
+.pricing {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.type {
+    background-color: #c62828;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.box {
+    background-color: #616161;
+    border-radius: 1rem;
+    margin: 10px;
+    width: 100%;
+}
+
+.type {
+    padding: 10px;
+}
+
+.box>ul {
+    list-style: none;
+    padding: 10px;
+}
+
+
+
+
+/*
+@media screen and (max-width: 1080px) {
+    .info {
+      width: 80%;
+    }
+  }
+  */
+/*########  media queries  ##########*/
+
+/*@media all and (max-width: 1050px) {
+    .info {
+    flex: 1 0 440px;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .info {
+        padding: 10px;
+    }
+
+"https://www.thomann.de/pics/bdb/383318/11318052_800.jpg"
+https://www.thomann.de/pics/bdb/430996/13139651_800.jpg
+
+}*/
+
+.pallete-reference{
+color: #757575;
+color: #212121;
+color: #616161;
+color: #424242;
+color: #c62828;
+color: #000000;
+}
