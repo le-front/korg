@@ -1,217 +1,202 @@
-/*########  global  ##########*/
-
-@import url('https://fonts.googleapis.com/css?family=Muli');
-
+/*--------------------------------------
+    1. Variables, mixins, placeholders
+    2. Global
+    3. Typography
+    4. Structure Style
+    5. Components Style
+    6. Media Queries
+---------------------------------------*/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-h1 {
-    color: tomato;
-    font-size: 5vw;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 0.4rem;
-}
-
-.glow {
-    text-shadow: 0 0 30px #e60000, 0 0 40px #e60000, 0 0 50px #e60000, 0 0 60px #e60000, 0 0 70px #e60000;
-}
-
-h2 {
-    margin-top: 0;
-    line-height: 2rem;
-    font-size: 1.6rem;
-}
-
-p {
-    margin: 10px 0 10px 0;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    font-weight: 100;
-}
-body {
-  font-family: 'Muli', sans-serif;
-  background-color: #313131;
-  font-size: 1.2rem;
-}
-
-body, html {
-  height: 100%;
-}
-
-/*########  header  ##########*/
-
-header {
-  background: black;
-  box-shadow: 0px 5px 10px #252525;
-  position: fixed;
+body,
+html {
   width: 100%;
-  top: 0;
-  /*overflow: hidden;*/
-  height: 50px;
-
-}
-
-.nav-block {
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav ul {
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  list-style: none;
-  color:white;
-  margin: 0 30px 0 0;
-}
-
-nav ul a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-nav ul li {
-  padding: 5px 10px;
-}
-
-a:visited {
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: 'Helvetica', Arial, sans-serif;
+  background-color: #252524;
   color: white;
 }
 
-a:hover {
-  color: tomato;
+nav {
+  background: #1c1c1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#header-img img {
-    height: 50px;
-  }
-
-#header-img {
-  margin-right: auto;  
+nav .menu ul {
+  color: white;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
 }
 
-/*########  features  ##########*/
-
-.container * {
-box-sizing: border-box;
+nav .logo img {
+  height: 50px;
 }
 
-.container {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5rem;    
+.hero {
+  position: relative;
 }
 
-section {
-    background-color: #212121; 
-    padding: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-radius: 1rem;
+.hero-text-grid {
+  border: 12px solid #ce2030;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.hero-text-grid h1 {
+  color: #ce2030;
+  text-align: center;
+}
+
+.icon-wrapper {
+  width: 25%;
+  height: 100%;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon-wrapper .icon {
+  padding: 1em;
+}
+
+.feature-desc {
+  width: 75%;
+}
+
+.features-wrapper {
+  background-color: #ce2030;
+  padding: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features-wrapper ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-wrapper {
+  background-color: #151515;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+  background-color: #c6c6be;
+  margin: 1em 0;
+  text-align: center;
 }
 
-.info {
-    padding: 30px;
-    font-family: Helvetica, Arial, sans-serif;
-    color: whitesmoke;
-    /*max-width: 389px;*/
-    flex: 1 0 50vw;
+.card .card-title {
+  padding: 1em;
+  background-color: #706d6e;
 }
 
-.image {
-    max-width: 500px;
-    flex: 1 0 26.3vw;
+.card ul {
+  list-style-type: none;
+  color: black;
+  padding: 0;
 }
 
-.image img {
-    /*object-fit: fill;*/
-    width: 100%;
-    height: auto;
+.card ul li {
+  margin: 10px 0;
 }
 
-.how-it-works {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center
+.card h2 {
+  font-size: 48px;
+  margin: 20px;
 }
 
-.pricing {
-    display: flex;
-    margin-top: 30px;
-    flex-wrap: wrap;
+.card button {
+  border: none;
+  background-color: #ce2030;
+  color: white;
+  margin: 0 0 20px 0;
+  padding: 10px 25px 10px 25px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: .08em;
 }
 
-.type {
-    background-color: #c62828;
-    border-radius: 1rem 1rem 0 0;
+.subscribe {
+  background-color: #706d6e;
+  padding: 20px;
+  text-align: center;
 }
 
-.box {
-    background-color: #616161;
-    border-radius: 1rem;
-    margin: 10px;
-    width: 100%;
+.subscribe p {
+  line-height: 1.4;
 }
 
-.type {
-    padding: 10px;
+.subscribe input[type=email] {
+  padding: 10px;
+  border: none;
 }
 
-.box>ul {
-    list-style: none;
-    padding: 10px;
+.subscribe input[type=submit] {
+  border: none;
+  padding: 10px 25px 10px 25px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  background-color: #1c1c1b;
+  color: white;
 }
 
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  clear: both;
+}
 
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /*
-@media screen and (max-width: 1080px) {
-    .info {
-      width: 80%;
-    }
-  }
-  */
-/*########  media queries  ##########*/
-
-/*@media all and (max-width: 1050px) {
-    .info {
-    flex: 1 0 440px;
-    }
-}
-
-@media all and (max-width: 420px) {
-    .info {
-        padding: 10px;
-    }
-
-"https://www.thomann.de/pics/bdb/383318/11318052_800.jpg"
-https://www.thomann.de/pics/bdb/430996/13139651_800.jpg
-
+.glow {
+    text-shadow: 0 0 30px #e60000, 0 0 40px #e60000, 0 0 50px #e60000, 0 0 60px #e60000, 0 0 70px #e60000;
 }*/
-
-.pallete-reference{
-color: #757575;
-color: #212121;
-color: #616161;
-color: #424242;
-color: #c62828;
-color: #000000;
+@media screen and (min-width: 720px) {
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
+/*# sourceMappingURL=main.css.map */
