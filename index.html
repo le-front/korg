@@ -7,97 +7,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- font -->
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <!-- site nav-->
     <nav>
-        <div class="logo">
-            <img src='./images/logo.png' alt="korg's logo">
-        </div>
-        <div class="menu">
-            <ul>
-                <li>features</li>
-                <li>how it works</li>
-                <li>pricing</li>
-            </ul>
+        <div class="menu" id="myTopnav">
+            <img class="logo" src='./images/logo.png' alt="korg's logo">
+            <a href="#features">features</a>
+            <a href="#how-it-works">how it works</a>
+            <a href="#pricing">pricing</a>
+            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </nav>
     <main>
+    <!-- hero section -->
         <div class="hero">
             <div class="hero-image">
                 <img src="./images/hero.png" /> 
             </div>
             <div class="hero-text-grid">
-                <h1>Meet the new Korg volca synths</h1>
+                <h1 class="item-a">Meet</h1>
+                <h1 class="item-b">the</h1> 
+                <h1 class="item-c">new</h1> 
+                <h1 class="item-d">volca</h1> 
+                <h1 class="item-e">synths</h1>
             </div>
         </div>   
-        <div class="features-wrapper">
-            <ul class="icon-wrapper">
-                <li><img class="icon" src="./images/icon-1.svg"/></li>
-                <li><img class="icon" src="./images/icon-2.svg"/></li>
-                <li></li><img class="icon" src="./images/icon-3.svg"/></li>
-            </ul>
-            <ul class="feature-desc">
-                <li>
-                    <h3>SYNC jack and MIDI IN connector allow synchronized performance with multiple units or with your DAW</h3>
-                    <p>By using the sync jack you can enjoy synchronized playback with multiple volcas or with a monotribe.</p>
-                </li>   
-                <li>
-                    <h3>Self-tuning function (Volca Bass and Keys only)</h3>
-                    <p>Until now, the problem with analog synthesizers has been that the pitch would drift over time, or because of changes in temperature. Volca solves this by providing a Self-tuning function that constantly tunes the oscillators.</p>
-                </li>
-                <li>
-                    <h3>Compact size, battery-powered operation, and built-in speaker for enjoyment anywhere</h3>
-                    <p>With its compact size, battery operation, and built-in speaker, it's easy to take the volca anywhere and perform any time.</p>
-                </li>
-            </ul>
-        </div>
-        <div class="video-wrapper">
+        <!--  features section  -->
+        <ul class="features-wrapper" id="features">
+            <li><img class="icon" src="./images/icon-1.svg"/></li>
+            <li class="desc">
+                <h3>SYNC jack and MIDI IN connector allow synchronized performance with multiple units or with your DAW</h3>
+                <p>By using the sync jack you can enjoy synchronized playback with multiple volcas or with a monotribe.</p>
+            </li>  
+            <li><img class="icon" src="./images/icon-2.svg"/></li> 
+            <li class="desc">
+                <h3>Self-tuning function (Volca Bass and Keys only)</h3>
+                <p>Until now, the problem with analog synthesizers has been that the pitch would drift over time, or because of changes in temperature. Volca solves this by providing a Self-tuning function that constantly tunes the oscillators.</p>
+            </li>
+            <li><img class="icon" src="./images/icon-3.svg"/></li>
+            <li class="desc">
+                <h3>Compact size, battery-powered operation, and built-in speaker for enjoyment anywhere</h3>
+                <p>With its compact size, battery operation, and built-in speaker, it's easy to take the volca anywhere and perform any time.</p>
+            </li>            
+        </ul>
+        <!-- video -->
+        <div class="video-wrapper" id="how-it-works">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/_Gau7UIzYY0?controls=0&amp;start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="card-wrapper">
-            <div class="card">
-                <div class="card-title">VOLCA | <strong>BEATS</strong></div>
-                <ul>
-                    <li>6 Analogue and 4 PCM-based drum parts</li>
-                    <li>Stutter, Active Step and Step Jump functions</li>
-                    <li>Multitouch Trigger Pad / Step button</li>
-                    <h2>$ 99,–</h2>
-                </ul>
-                <button>BUY</button>
-            </div>
-            <div class="card">
-                <div class="card-title">VOLCA | <strong>BASS</strong></div>
-                <ul>
-                    <li>6 Analogue and 4 PCM-based drum parts</li>
-                    <li>Stutter, Active Step and Step Jump functions</li>
-                    <li>Multitouch Trigger Pad / Step button</li>
-                    <h2>$ 99,–</h2>
-                </ul>
-                <button>BUY</button>
-            </div>
-            <div class="card">
-                <div class="card-title">VOLCA | <strong>KEYS</strong></div>
-                <ul>
-                    <li>6 Analogue and 4 PCM-based drum parts</li>
-                    <li>Stutter, Active Step and Step Jump functions</li>
-                    <li>Multitouch Trigger Pad / Step button</li>
-                    <h2>$ 99,–</h2>
-                </ul>
-                <button>BUY</button>
-            </div>
+        <!-- pricing -->
+        <div class="card-wrapper" id="pricing">
+            <ul class="clearfix">
+                <li class="card">
+                    <ul>
+                        <div class="card-title"><strong>VOLCA BEATS</strong></div>
+                        <li>6 Analogue and 4 PCM-based drum parts</li>
+                        <li>Stutter, Active Step and Step Jump functions</li>
+                        <li>Multitouch Trigger Pad / Step button</li>
+                        <h2>$ 135,–</h2>
+                    </ul>
+                    <a href="https://www.thomann.de/de/korg_volca_beats.htm" target="_blank">BUY</a>
+                </li>
+                <li class="card">
+                    <ul>
+                        <div class="card-title"><strong>VOLCA BASS</strong></div>
+                        <li>6 Analogue and 4 PCM-based drum parts</li>
+                        <li>Stutter, Active Step and Step Jump functions</li>
+                        <li>Multitouch Trigger Pad / Step button</li>
+                        <h2>$ 135,–</h2>
+                    </ul>
+                    <a href="https://www.thomann.de/de/korg_volca_beats.htm" target="_blank">BUY</a>
+                </li>
+                <li class="card">
+                    <ul>
+                        <div class="card-title"><strong>VOLCA KEYS</strong></div>
+                        <li>6 Analogue and 4 PCM-based drum parts</li>
+                        <li>Stutter, Active Step and Step Jump functions</li>
+                        <li>Multitouch Trigger Pad / Step button</li>
+                        <h2>$ 135,–</h2>
+                    </ul>
+                    <a href="https://www.thomann.de/de/korg_volca_beats.htm" target="_blank">BUY</a>
+                </li>
+            </ul>
         </div>
+        <!-- newsletter subscribing-->
         <div class="subscribe">
             <form>
-                <p>Subscribe to our newsletter and receive the lastest information 
+                <p>Subscribe to our newsletter and receive the latest information 
                         about our products, articles and synthesizer workshops.</p>
-                <input id="GET-name" type="email"/ placeholder="Enter yor email address">
-                <input type="submit" />
+                <input id="GET-name" size="30" type="email" placeholder="Enter yor email address" />
+                <button id="submit" type="submit">submit</button>
             </form>
         </div>
     </main>
+<script>
+
+function myFunction() {
+  let x = document.getElementById("myTopnav");
+  if (x.className === "menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu";
+  }
+}
+
+
+</script>   
 </body>
 </html>
