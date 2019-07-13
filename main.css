@@ -29,17 +29,24 @@ html {
   display: table;
 }
 
-nav {
+header {
   background: #151515;
   position: fixed;
   z-index: 99;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-nav .logo {
+header #header-img {
   height: 40px;
   margin-right: auto;
 }
+
+/* nav .logo {
+  height: 40px;
+  margin-right: auto;
+} */
 
 .menu {
   overflow: hidden;
@@ -308,7 +315,7 @@ nav .logo {
   background: #706d6e;
 }
 
-.subscribe button[type=submit] {
+.subscribe input[type=submit] {
   border: none;
   padding: 7px 25px 9px 25px;
   border: 3px solid white;
@@ -321,7 +328,7 @@ nav .logo {
   color: white;
 }
 
-.subscribe button[type=submit]:hover {
+.subscribe input[type=submit]:hover {
   background-color: #ce2030;
 }
 

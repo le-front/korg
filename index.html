@@ -13,18 +13,21 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+    <!--header-->
+    <header id="header">
+        <img id="header-img" src='./images/logo.png' alt="korg's logo">
     <!-- site nav-->
-    <nav>
-        <div class="menu" id="myTopnav">
-            <img class="logo" src='./images/logo.png' alt="korg's logo">
-            <a href="#features">features</a>
-            <a href="#how-it-works">how it works</a>
-            <a href="#pricing">pricing</a>
-            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    </nav>
+        <nav id="nav-bar">
+            <div class="menu" id="myTopnav">
+                <a class="nav-link" href="#features">features</a>
+                <a class="nav-link" href="#how-it-works">how it works</a>
+                <a class="nav-link" href="#pricing">pricing</a>
+                <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
     <!-- main -->
     <main>
     <!-- hero section -->
@@ -47,7 +50,7 @@
             </div>
         </div>   
         <!--  features section  -->
-        <div class="features-wrapper" id="features">
+        <section class="features-wrapper" id="features">
             <ul>
                 <li><img class="icon" src="./images/icon-1.svg"/></li>
                 <li class="desc">
@@ -69,13 +72,15 @@
                     <p>With its compact size, battery operation, and built-in speaker, it's easy to take the volca anywhere and perform any time.</p>
                 </li> 
             </ul>           
-        </div>
+        </section>
         <!-- video -->
-        <div class="video-wrapper" id="how-it-works">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_Gau7UIzYY0?controls=0&amp;start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <section id="how-it-works">
+            <div  class="video-wrapper" >
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_Gau7UIzYY0?controls=0&amp;start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
         <!-- pricing -->
-        <div class="card-wrapper" id="pricing">
+        <section class="card-wrapper" id="pricing">
             <ul class="clearfix">
                 <li class="card">
                     <ul>
@@ -108,14 +113,14 @@
                     <a href="https://www.thomann.de/de/korg_volca_beats.htm" target="_blank">BUY</a>
                 </li>
             </ul>
-        </div>
+        </section>
         <!-- newsletter subscribing-->
         <div class="subscribe">
-            <form>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <p>Subscribe to our newsletter and receive the latest information 
                         about our products, articles and synthesizer workshops.</p>
-                <input id="GET-name" size="30" type="email" placeholder="Enter yor email address" />
-                <button id="submit" type="submit">submit</button>
+                <input id="email" name="email" size="30" type="email" placeholder="Enter yor email address" />
+                <input id="submit" type="submit" />
             </form>
         </div>
     </main>
