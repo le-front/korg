@@ -43,11 +43,6 @@ header #header-img {
   margin-right: auto;
 }
 
-/* nav .logo {
-  height: 40px;
-  margin-right: auto;
-} */
-
 .menu {
   overflow: hidden;
   position: relative;
@@ -90,6 +85,11 @@ header #header-img {
   position: relative;
   margin-top: 40px;
 }
+
+/* .hero .hero-image img {
+  height: 100vh;
+} */
+
 
 .hero-text-grid {
   border: 1.5vw solid #ce2030;
@@ -220,10 +220,7 @@ header #header-img {
   background-color: #151515;
   position: absolute;
   top: -13px;
-  left: 30%;
-  right: 30%;
   font-size: 1.3em;
-  max-width: 172px;
   padding: 0 10px;
 }
 
@@ -235,15 +232,19 @@ header #header-img {
 
 .card {
   margin: 1em 0;
-  text-align: center;
   border: 6px solid #ce2030;
   position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card ul {
   list-style-type: none;
   color: #ce2030;
   padding: 20px;
+  text-align: center;
 }
 
 .card ul li {
