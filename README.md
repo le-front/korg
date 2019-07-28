@@ -1,2 +1,2 @@
 # korg
-fake landing page (freecodecamp exercise)
+landing page (freecodecamp exercise)
